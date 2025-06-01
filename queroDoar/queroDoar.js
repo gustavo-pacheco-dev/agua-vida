@@ -34,6 +34,6 @@ function validarPagamento() {
         return false; // Impede o envio do formulário
     }
 
-    alert("Pagamento enviado!!");
+    alert("Copie o link de pagamento abaixo no app do seu banco:\n\nlinkpagamento:123456.789.10");
     return true; // Permite o envio
 }
