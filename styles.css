@@ -1,0 +1,231 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, 
+                #122b41 75%, 
+                #497195 100%);
+    color: white;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: transparent;
+}
+
+.justified-text {
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo span b {
+    color: #5EC8F2;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+    padding-bottom: 5px;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    color: #5EC8F2;
+    border-bottom: 2px solid #5EC8F2;
+}
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    flex-direction: row-reverse;
+    position: relative;
+}
+
+.hero .content {
+    max-width: 500px;
+    text-align: right;
+}
+
+.hero .image {
+    max-width: 400px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    line-height: 1.3;
+}
+
+.hero h1 span {
+    color: #5EC8F2;
+}
+
+.hero p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+#donateButton {
+    background-color: #187aa0;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 4px;
+}
+
+#donateButton:hover {
+    background-color: #0088ff;
+}
+
+.scroll-button {
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    bottom: 30px;
+    background-color: #072b4d;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    z-index: 10;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.scroll-button:hover {
+    background: #0088ff;
+}
+
+
+#caixa-principal {
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    height: 100vh;
+    max-height:calc(100vh - 11rem); 
+    background-color: #C1C1C1;
+    overflow: hidden;
+}
+
+
+
+#nossa-historia {
+    width: 35%;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding-right: 2rem;
+}
+
+.nossa-historia-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.nossa-historia-texto h2 {
+    color: #232323;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.nossa-historia-texto h2 span {
+    color: #72AEFD;
+}
+
+.nossa-historia-texto p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: justify;
+    color: #444;
+}
+
+
+#nossa-historia a {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #218AE6;
+    color: white;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 20px;
+    text-align: center;
+    width: fit-content;
+    transition: all 0.3s ease;
+    margin-right: 10rem;
+}
+
+#nossa-historia a:hover {
+    background-color: #1a7bcb;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+#nossa-historia-imagem {
+    flex: 1;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+#nossa-historia-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+#nossa-historia-imagem:hover img {
+    transform: scale(1.03);
+}

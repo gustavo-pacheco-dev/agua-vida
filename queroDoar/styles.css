@@ -1,0 +1,238 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(180deg, #122b41 70%, #497195 100%);
+    color: white;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: transparent;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo span b {
+    color: #5EC8F2;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+    padding-bottom: 5px;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: #5EC8F2;
+    border-bottom: 2px solid #5EC8F2;
+}
+
+.main-container {
+    display: flex;
+    height: calc(100vh - 80px);
+    padding: 0 50px;
+    align-items: flex-start;
+}
+
+.image-section {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding-right: 40px;
+    padding-top: 100px;
+    margin-left: -50px;
+    margin-bottom: -50px;
+}
+
+.image-section img {
+    max-height: 55vh;
+    width: auto;
+    transform: translateY(155px);
+    margin-left: 50px;
+}
+
+.form-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 500px;
+    padding-top: 20px;
+    margin-top: -30px;
+}
+
+.form-header {
+    margin-bottom: 20px;
+}
+
+.form-header h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    line-height: 1.3;
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+}
+
+.form-header h1 span {
+    color: #5EC8F2;
+}
+
+.form-header h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-header h2 span {
+    color: #5EC8F2;
+}
+
+.donation-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.donation-form label {
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.donation-form input,
+.donation-form select {
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #497195;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1rem;
+}
+
+.donation-form input:focus,
+.donation-form select:focus {
+    outline: none;
+    border-color: #5EC8F2;
+    box-shadow: 0 0 0 3px rgba(94, 200, 242, 0.2);
+}
+
+select#genero:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+select#genero option {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 10px;
+}
+
+select#genero option:checked {
+    background-color: #3498db;
+    color: white;
+}
+
+select#genero option:hover {
+    background-color: #1abc9c;
+    cursor: pointer;
+}
+
+.payment-buttons {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.payment-option {
+    flex: 1;
+    padding: 12px;
+    background-color: #187aa0;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+}
+
+.payment-option:hover {
+    background-color: #5EC8F2;
+    transform: translateY(-2px);
+}
+
+.selected-payment-option {
+    background-color: #5EC8F2;
+    transform: translateY(-2px);
+}
+
+#payment-btn {
+    background-color: #5EC8F2;
+    color: #122b41;
+    border: none;
+    padding: 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+#payment-btn:hover {
+    background-color: #0088ff;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 136, 255, 0.3);
+}
+
+#toast {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #5EC8F2;
+  color: #122b41;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-weight: bold;
+  opacity: 0;
+  transition: all 0.5s ease;
+  z-index: 1000;
+}
+#toast.show {
+  opacity: 1;
+}
+.hidden {
+  display: none;
+}

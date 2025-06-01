@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #1a1a1a;
+    color: white;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: transparent;
+}
+
+.justified-text {
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo span b {
+    color: #5EC8F2;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+    padding-bottom: 5px;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: #5EC8F2;
+    border-bottom: 2px solid #5EC8F2;
+}
+
+.donation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 100px 100px 0px 100px;
+    flex-direction: column;
+}
+
+.donation .content {
+    max-width: 900px;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.donation .image {
+    max-width: 400px;
+}
+
+.donation h1 {
+    font-size: 100px;
+    line-height: 5%;
+}
+
+.donation h1 span {
+    color: #5EC8F2;
+}
+
+.donation h2 {
+    font-size: 56px;
+    margin-bottom: 120px;
+    line-height: 10%;
+}
+
+.scroll-button {
+    background-color: #072b4d;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 50px auto;
+    display: block;
+    transition: 0.3s;
+    border-radius: 4px;
+}
+
+.scroll-button:hover {
+    background: #0088ff;
+}
