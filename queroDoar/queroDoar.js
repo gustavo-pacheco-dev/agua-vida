@@ -24,3 +24,16 @@ function selectPayment(option) {
 
     }
 }
+
+function validarPagamento() {
+    const selected = document.getElementsByClassName("selected-payment-option");
+
+    // Verificando se alguma opção foi selecionada
+    if (!selected[0]) {
+        alert("Por favor, selecione uma opção de pagamento antes de enviar.");
+        return false; // Impede o envio do formulário
+    }
+
+    alert("Pagamento enviado!!");
+    return true; // Permite o envio
+}

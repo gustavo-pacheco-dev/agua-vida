@@ -33,7 +33,7 @@
                 <h1>A importância de doar não está no valor e sim na <span>intenção.</span></h1>
                 <h2>Dados <span>Pessoais</span></h2>
             </div>
-            <form class="donation-form" onsubmit="alert('Pagamento enviado!!')">
+            <form class="donation-form" onsubmit="return validarPagamento()">
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" placeholder="Nome Completo" required>
 
@@ -61,8 +61,8 @@
                 </div>
 
                 <button type="submit" id="payment-btn">EMITIR PAGAMENTO</button>
-                
-            </form> 
+
+            </form>
         </div>
     </main>
     <div id="toast" class="hidden">Pagamento gerado com sucesso!</div>
